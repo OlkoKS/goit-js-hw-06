@@ -11,7 +11,7 @@ function onBtnClick(event) {
         elements: { email, password }
     } = event.currentTarget;
     if (email.value === "" || password.value === "") {
-    alert("Please fill in all the fields!");
+    return alert("Please fill in all the fields!");
 }
 const resultObj = { email: email.value, password: password.value };
 console.log(resultObj);
